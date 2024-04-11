@@ -1,0 +1,59 @@
+
+
+
+.presentation {
+  display: flex;
+  padding: 50px;
+}
+
+.title-1 {
+  font-weight: 300;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.img-juan {
+  width: 30%; /* Ajusta el ancho según sea necesario */
+  height: auto;
+  border-radius: 15rem;
+  border: 0.5px solid #29292952;
+  filter: grayscale(100%); /* Convertir la imagen a escala de grises */
+  transition: filter 0.3s ease; /* Agregar una transición suave */
+}
+.img-juan:hover {
+  filter: none; /* Eliminar el efecto de escala de grises al pasar el cursor sobre la imagen */
+}
+
+
+.parrafo-1 {
+  color: black;
+  font-size: 18px;
+  font-weight: 200;
+  display: block;
+  width: 70%;
+  line-height: 1.8rem;
+}
+
+.cv {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .presentation{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title-1{
+    font-size: 3rem;
+  }
+
+  .parrafo-1 {
+    width: 100%;
+  }
+
+  .img-juan{
+    width: 100%;
+  }
+}

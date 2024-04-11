@@ -1,0 +1,122 @@
+.title-detail {
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.container-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  grid-auto-rows: 300px;
+  grid-gap: 3rem;
+  padding: 2rem;
+}
+
+.image-detail {
+  width:100%;
+  height: 100%;
+  padding: 3rem;
+  border: 0.5px solid #29292913;
+  border-right: none;
+  border-left: none;
+  object-fit: cover;
+  filter: grayscale(100%); /* Convertir la imagen a escala de grises */
+  transition: filter 0.3s ease;
+}
+
+
+.image-detail:hover {
+  filter: none; /* Eliminar el efecto de escala de grises al pasar el cursor sobre la imagen */
+}
+
+.cont-paragra {
+  border: 0.5px solid #29292913;
+  border-top: none;
+  border-bottom: none;
+}
+
+.paragraph-detail {
+  color: black;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.8rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.icons-detail{
+  position: relative;
+  align-items: center;
+  display: flex;
+  border: 0.5px solid #29292913;
+  border-top: none;
+  border-bottom: none;
+  justify-content: center;
+}
+
+
+.icons-detail a {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.icons-detail a span {
+  position: relative;
+}
+
+.icons-detail a span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.icons-detail a:hover span::after {
+  width: 100%;
+}
+
+.back-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.next-button{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-detail {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+    grid-auto-rows: auto; /* Cambia a filas automáticas según el contenido */
+    grid-gap: 1rem; /* Reduce el espacio entre las celdas */
+    padding: 1rem; /* Reduce el relleno */
+  }
+
+  .title-detail{
+    margin-top: 3rem;
+  }
+  
+}
+
+
+
+

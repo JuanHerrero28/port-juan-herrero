@@ -1,0 +1,68 @@
+.menu-item{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 0.5px solid #29292952;
+    border-left: none;
+    border-right: none;
+    
+
+}
+
+.project-list-container{
+    padding: 4rem;
+    overflow: hidden;
+}
+
+.project-list {
+    padding: 0;
+    list-style: none;
+  }
+
+  .text-placeholder{
+    font-family: "NeueKaine-Light";
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: black;
+  }
+
+  .title-project{
+    font-weight: 100;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon-placeholder{
+    width: 40%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 0.5px solid #29292952;
+    filter: grayscale(100%); /* Convertir la imagen a escala de grises */
+    transition: filter 0.3s ease; /* Agregar una transición suave */
+  }
+
+  .icon-placeholder:hover{
+    filter: none; /* Eliminar el efecto de escala de grises al pasar el cursor sobre la imagen */
+  }
+
+  .emoji-1{
+    font-size: 2.5rem;
+    border-radius: 5rem;
+    padding: 15px;
+  }
+
+  .link{
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .text-placeholder{font-size: 1.7rem;}
+    
+  }

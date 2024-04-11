@@ -1,0 +1,58 @@
+.skills-grid {
+  padding: 50px;
+}
+
+.skill-container {
+  padding: 2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 24px;
+  border: 0.5px solid #29292952;
+  border-top: none;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+.icon-skill {
+  font-size: 5rem;
+  color: #9EE5C0;
+}
+
+.title-skill2 {
+  font-family: "NeueKaine-Light";
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.paragraph-skill {
+  color: black;
+  font-size: 18px;
+  font-weight: 200;
+  display: block;
+  width: 70%;
+  line-height: 1.8rem;
+}
+
+.title-skill{
+    font-weight: 100;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .icon{
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .paragraph-skill{
+      width: 100%;
+    }
+    
+  }

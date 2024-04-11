@@ -1,0 +1,29 @@
+.material-button {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: #ffffff;
+  border: 0.5px solid #29292952;
+  border-radius: 60px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "NeueKaine-Light";
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 12px 16px;
+  margin-top: 2rem;
+}
+
+.material-button:hover {
+  background-color: #ffffff;
+  border: 0.5px solid #9ee5c0ce;
+  font-family: "NeueKaine-Light";
+  font-weight: 200;
+}
+
+.btn-down{
+  font-size: 1.1rem;
+  color: black;
+}
+

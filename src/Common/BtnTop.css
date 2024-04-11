@@ -1,0 +1,53 @@
+.btn-top {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    background-color: #9EE5C0;
+    border: 0.5px solid #29292952;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .btn-top.visible {
+    opacity: 1;
+  }
+  
+  .btn-top i {
+    font-size: 24px;
+  }
+  
+/*   .btn-top: Esta es una clase que se aplica al elemento HTML del botón. Se utilizan varias propiedades CSS para definir el estilo del botón.
+
+position: fixed;: Esto establece la posición del botón como fija en relación con la ventana del navegador. El botón permanecerá en la misma posición incluso si el usuario se desplaza hacia arriba o hacia abajo en la página.
+
+bottom: 20px; right: 20px;: Estas propiedades controlan la distancia del botón desde el borde inferior y derecho de la ventana del navegador. En este caso, el botón estará a 20 píxeles del borde inferior y derecho de la ventana.
+
+background-color: #9EE5C0;: Establece el color de fondo del botón.
+
+border: 0.5px solid #29292952;: Define un borde para el botón con un grosor de 0.5 píxeles y un color sólido.
+
+border-radius: 50%;: Esto establece el radio de las esquinas del botón. En este caso, se establece en 50% para hacer que el botón sea circular.
+
+width: 60px; height: 60px;: Establece el ancho y la altura del botón en 60 píxeles, lo que hace que el botón sea cuadrado debido al border-radius definido.
+
+z-index: 30;: Define la profundidad del botón en relación con otros elementos de la página. Un valor más alto significa que el botón estará en la parte superior de otros elementos con un valor de z-index inferior.
+
+display: flex; justify-content: center; align-items: center;: Estas propiedades se utilizan para centrar el contenido (el icono) vertical y horizontalmente dentro del botón.
+
+cursor: pointer;: Esto cambia el cursor del mouse cuando está sobre el botón, indicando que es interactivo y se puede hacer clic.
+
+opacity: 0;: Define la opacidad del botón. Con un valor de 0, el botón será completamente transparente y no visible.
+
+transition: opacity 0.3s ease-in-out;: Esto establece una transición suave de 0.3 segundos para la propiedad de opacidad del botón, lo que hace que aparezca o desaparezca gradualmente en lugar de instantáneamente.
+
+.btn-top.visible: Esta es una clase adicional que se aplicará al botón cuando se desee que sea visible. La opacidad se establece en 1 cuando esta clase está presente, lo que hace que el botón sea completamente visible.
+
+.btn-top i: Establece el tamaño del icono dentro del botón. En este caso, el tamaño del icono se establece en 24 píxeles. */

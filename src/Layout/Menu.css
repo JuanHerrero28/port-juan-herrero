@@ -1,0 +1,133 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  border: 0.5px solid #29292909;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 2%;
+  padding: 15px;
+  background-color: #9EE5C0;
+  border: 0.5px solid #29292952;
+  border-radius: 60px;
+  width: 80px;
+  height: 80px;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-bar {
+  background-color: #fff;
+  height: 1px;
+  border-radius: 2px;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: 4px; /* Agrega margen superior para separar las líneas */
+  margin-bottom: 4px; /* Agrega margen inferior para separar las líneas */
+}
+
+.menu-toggle .bar1,
+.menu-toggle .bar2 {
+  background-color: #29292949;
+  height: 1px; /* Ajusta la altura de las barras según tus necesidades */
+  border-radius: 5px;
+  width: 80%;
+  transition: all 0.3s;
+}
+
+.menu-toggle .bar1 {
+  transform-origin: center;
+}
+
+.menu-toggle.open .bar1 {
+  transform: rotate(45deg) translate(5px, 5px); /* Ajuste en la posición de la cruz */
+}
+
+.menu-toggle.open .bar2 {
+  transform: rotate(-45deg) translate(1px, -2px); /* Ajuste en la posición de la cruz */
+}
+
+/* caja de iconos */
+.menu-content {
+  height: 100%;
+  position: fixed;
+  top: 0; /* Ajusta según la posición deseada, en este caso, arriba */
+  right: 0; /* Ajusta según la posición deseada, en este caso, a la izquierda */
+  background-color: #292929;
+  transition: all 0.3s;
+  overflow: hidden;
+  z-index: 10;
+  width: 0;
+  display: flex; /* Añade esta línea para activar el flexbox */
+  flex-direction: column; /* Establece la dirección de los elementos como columna */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/* caja que rodea los iconos */
+.menu-content.open {
+  width: 300px;
+  /* box-shadow:  rgb(236, 94, 94); */
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column; /* Cambiado a "block" para que los elementos del menú estén en una columna */
+}
+
+.menu-button {
+  text-align: left;
+  font-family: "NeueKaine-Light";
+  font-weight: 200;
+  background-color: #292929;
+  border: none;
+  color: #a7a7a7;
+  font-size: 40px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-button:hover {
+  color: #F9F9F9;
+}
+
+/* NOMBRE */
+
+.name-component {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.name-letter-button {
+  font-family: "NeueKaine-Light";
+  font-weight: 200;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer; /* Cambia el cursor a una mano */
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.name-letter-button:focus {
+  outline: none; /* Elimina el contorno al hacer foco */
+}
+
+@media only screen and (max-width: 600px) {
+  .name-letter-button {
+    font-size: 1.2rem;
+  }
+
+}
+
