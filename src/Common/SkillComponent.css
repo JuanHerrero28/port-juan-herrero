@@ -49,16 +49,16 @@
       flex-direction: column;
       text-align: center;
       justify-content: center;
+      border: none;
+      border-top: none;
+      border-bottom: none;
+      
     }
 
     .paragraph-skill{
       width: 100%;
+      margin-top: 20px;
     }
 
-    .icon{
-      border: none;
-      border-top: none;
-      border-bottom: none;
-    }
     
   }
