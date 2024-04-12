@@ -44,7 +44,7 @@ const projects = [
     images: ["den-1", "den-2", "den-3"],
     description: "DentistaFinder es una aplicación web desarrollada con React que permite a los usuarios explorar una lista de dentistas y agregar sus favoritos. La aplicación ofrece funcionalidades como la visualización detallada de cada dentista, contacto mediante un formulario y la capacidad de cambiar entre modos de luz y oscuridad. Utilizando un contexto global, la aplicación gestiona el estado de los temas y la lista de dentistas favoritos de manera eficiente.",
     description2: "Mediante el uso de componentes reutilizables y enrutamiento con React Router, DentistaFinder proporciona una experiencia fluida de usuario. Además, la aplicación utiliza localStorage para almacenar los dentistas favoritos del usuario de manera persistente, ofreciendo una experiencia personalizada. La interfaz de usuario se adapta dinámicamente según la preferencia de tema del usuario, asegurando una experiencia visual agradable y accesible.",
-    url: "https://github.com/JuanHerrero28/front3-final-nakayama-herrero",
+    url: "https://front3-final-nakayama-herrero.vercel.app/",
   },
 ];
 
