@@ -60,5 +60,12 @@
       margin-top: 20px;
     }
 
-    
+    .skills-grid{
+      padding: 0;
+    }
+
+    .title-skill{
+      text-align: center;
+      padding: 1.5rem;
+    }
   }
