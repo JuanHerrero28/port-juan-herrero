@@ -39,7 +39,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "DentistaFinder",
+    name: "Dentista Finder",
     image: "den-4.jpg",
     images: ["den-1", "den-2", "den-3"],
     description: "DentistaFinder es una aplicación web desarrollada con React que permite a los usuarios explorar una lista de dentistas y agregar sus favoritos. La aplicación ofrece funcionalidades como la visualización detallada de cada dentista, contacto mediante un formulario y la capacidad de cambiar entre modos de luz y oscuridad. Utilizando un contexto global, la aplicación gestiona el estado de los temas y la lista de dentistas favoritos de manera eficiente.",

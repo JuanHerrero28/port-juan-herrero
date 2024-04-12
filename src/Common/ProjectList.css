@@ -64,5 +64,9 @@
 
   @media only screen and (max-width: 600px) {
     .text-placeholder{font-size: 1.7rem;}
+    .title-project{
+      font-size: 2.9rem;
+    }
+   
     
   }
