@@ -54,5 +54,11 @@
     .paragraph-skill{
       width: 100%;
     }
+
+    .icon{
+      border: none;
+      border-top: none;
+      border-bottom: none;
+    }
     
   }
