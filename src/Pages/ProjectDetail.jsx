@@ -82,7 +82,6 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
         <Loading />
       ) : (
         <>
-
           <Link to="/" onClick={() => onSectionChange(2)}  className="back-button"><ButtonComponent text="Volver al inicio"/></Link>
           {/* Botón para volver al inicio */}
           <h2 className="title-detail">{project.name}</h2>
