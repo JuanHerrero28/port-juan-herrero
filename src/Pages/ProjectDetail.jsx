@@ -18,6 +18,7 @@ import den2 from "../image/den-2.jpg";
 import den3 from "../image/den-3.jpg";
 import ButtonComponent from "../Common/ButtonComponent";
 
+
 const images = {
   "clinic-2": clinic2,
   "clinic-3": clinic3,

@@ -1,0 +1,25 @@
+.cursor {
+  position: fixed;
+  width: 40px; /* Tamaño inicial del cursor */
+  height: 40px; /* Tamaño inicial del cursor */
+  background-color: #9EE5C0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.15s ease; /* Ajusta la velocidad de transición */
+}
+
+.cursor.hovered {
+  width: 90px; /* Tamaño del cursor en estado de hover */
+  height: 90px; /* Tamaño del cursor en estado de hover */
+}
+
+.view-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: "NeueKaineLight";
+  color: white;
+}

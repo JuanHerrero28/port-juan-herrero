@@ -11,7 +11,7 @@
   border: 4px solid #ccc; /* Grosor y color del borde */
   border-radius: 50%; /* Hace que el borde sea redondeado, formando un círculo */
   border-top-color: black; /* Color del borde superior (puedes cambiarlo para hacerlo más dinámico) */
-  animation: spin 2.5s linear infinite; /* Animación de rotación */
+  animation: spin 3.5s linear infinite; /* Animación de rotación */
 }
 
 @keyframes spin {
