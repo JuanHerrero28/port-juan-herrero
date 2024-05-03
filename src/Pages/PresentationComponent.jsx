@@ -11,7 +11,7 @@ const PresentationComponent = () => {
   const dataArray = [
     {
       title: "..Quién soy ?",
-      parrafo: "¡Hola! \u{1F44B} Soy Juan Manuel, desarrollador Frontend especializado en React, JavaScript y Java. Me dedico a la creación de interfaces interactivas y dinámicas, optimizando la experiencia del usuario y aplicando los principios de UI/UX. Como objetivo, me propongo implementar mejoras en la interfaz y optimizar procesos a través del frontend para ofrecer una experiencia de usuario dinámica.",
+      parrafo: "¡Hola! \u{1F44B} Soy Juan Manuel, desarrollador Frontend especializado en React, JavaScript y Java. Me dedico a la creación de interfaces interactivas y dinámicas, optimizando la experiencia del usuario y aplicando los principios de UX/UI. Como objetivo, me propongo implementar mejoras en la interfaz y optimizar procesos a través del frontend para ofrecer una experiencia de usuario dinámica.",
 
       img: juanPortImage, // Utiliza la imagen importada
     },
