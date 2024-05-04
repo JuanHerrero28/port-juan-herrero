@@ -47,6 +47,15 @@ const projects = [
     description2: "Mediante el uso de componentes reutilizables y enrutamiento con React Router, DentistaFinder proporciona una experiencia fluida de usuario. Además, la aplicación utiliza localStorage para almacenar los dentistas favoritos del usuario de manera persistente, ofreciendo una experiencia personalizada. La interfaz de usuario se adapta dinámicamente según la preferencia de tema del usuario, asegurando una experiencia visual agradable y accesible.",
     url: "https://front3-final-nakayama-herrero.vercel.app/",
   },
+  {
+    id: 5,
+    name: "PortFolio Graphic Designer",
+    image: "ds-1.jpg",
+    images: ["ds-1", "ds-2", "ds-3"],
+    description: "Este proyecto, hospedado en Vercel, representa mi portafolio profesional, desarrollado con un enfoque centrado en la experiencia del usuario (UX/UI). Utilicé un conjunto de tecnologías estándar de la web, incluyendo HTML5, CSS3 y JavaScript, con un enfoque en modularidad y escalabilidad. La arquitectura del sitio se fundamenta en un patrón de diseño MVC (Modelo-Vista-Controlador), y la lógica de presentación se gestiona eficientemente a través de un marco de trabajo frontend como React.js, lo que permite una interacción dinámica y una respuesta rápida del usuario.",
+    description2: "En términos de ingeniería de software, el código subyacente refleja una arquitectura bien definida y modular, con un énfasis en la reutilización de componentes y la mantenibilidad a largo plazo. Cada aspecto del desarrollo se llevó a cabo con un riguroso control de calidad, garantizando la coherencia del diseño, la integridad de los datos y la seguridad del sistema. En última instancia, este proyecto ejemplifica mi competencia técnica en el desarrollo web moderno y mi compromiso con la excelencia en la entrega de soluciones digitales de alta calidad.",
+    url: "https://port-felicitas-herrero.vercel.app/",
+  },
 ];
 
 function App() {

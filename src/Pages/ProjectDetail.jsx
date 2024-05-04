@@ -16,6 +16,9 @@ import ba3 from "../image/ba-3.jpg";
 import den1 from "../image/den-1.jpg";
 import den2 from "../image/den-2.jpg";
 import den3 from "../image/den-3.jpg";
+import ds1 from "../image/ds-1.jpg";
+import ds2 from "../image/ds-2.jpg";
+import ds3 from "../image/ds-3.jpg";
 import ButtonComponent from "../Common/ButtonComponent";
 
 
@@ -32,6 +35,9 @@ const images = {
   "den-1": den1,
   "den-2": den2,
   "den-3": den3,
+  "ds-1": ds1,
+  "ds-2": ds2,
+  "ds-3": ds3,
 };
 
 const ProjectDetail = ({ projects, onSectionChange }) => {
@@ -131,7 +137,7 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
               <ButtonComponent text={<>Proyecto Anterior</>} />
             </Link>
           )}
-          {project.id !== 4 && (
+          {project.id !== 5 && (
             <Link to={`/project/${project.id + 1}`} className="next-button" onClick={handleNextProjectClick}>
               <ButtonComponent text={<>Siguiente Proyecto</>} />
             </Link>

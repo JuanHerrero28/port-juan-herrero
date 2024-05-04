@@ -2,42 +2,43 @@ import { motion } from "framer-motion";
 import "./ProjectList.css"; // Importa los estilos CSS
 import { Link } from "react-router-dom";
 
-
-
 // Importa las imágenes individualmente
 import dc1Image from "../image/dc-1.jpg";
 import todo1Image from "../image/to-do-1.jpg";
 import barong1Image from "../image/barong-1.jpg";
 import eventosJuanImage from "../image/den-4.jpg";
+import desingPort from "../image/ds-1.jpg";
 
 const variants = {
   open: {
     y: 1,
     opacity: 1,
     transition: {
-      y: { stiffness: 100, damping: 10 }
-    }
+      y: { stiffness: 100, damping: 10 },
+    },
   },
   closed: {
     y: 10,
     opacity: 0.5,
     transition: {
       y: { stiffness: 100, damping: 10 },
-      opacity: { duration: 1 }
-    }
-  }
+      opacity: { duration: 1 },
+    },
+  },
 };
 
-const getImage = imageName => {
+const getImage = (imageName) => {
   switch (imageName) {
-    case 'dc-1.jpg':
+    case "dc-1.jpg":
       return dc1Image;
-    case 'to-do-1.jpg':
+    case "to-do-1.jpg":
       return todo1Image;
-    case 'barong-1.jpg':
+    case "barong-1.jpg":
       return barong1Image;
-    case 'den-4.jpg':
+    case "den-4.jpg":
       return eventosJuanImage;
+    case "ds-1.jpg":
+      return desingPort;
     default:
       return null;
   }
@@ -83,7 +84,3 @@ const ProjectList = ({ projects }) => {
 };
 
 export default ProjectList;
-
-
-
-
