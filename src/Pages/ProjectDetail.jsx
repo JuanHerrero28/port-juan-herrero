@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Loading from "../Common/Loading"; // Importa el componente Loading
 import './ProjectDetail.css'
+import Cursor from "../Common/Cursor"
 
 import clinic2 from "../image/clinic-2.jpg";
 import clinic3 from "../image/clinic-3.jpg";
@@ -143,7 +144,7 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
             </Link>
           )}
           {/* Botón para ir al siguiente proyecto */}
-          
+          <Cursor/>
           </div>
         </>
       )}

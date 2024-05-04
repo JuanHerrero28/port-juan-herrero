@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useState, useEffect   } from "react";
 import "./PresentationComponent.css";
 import juanPortImage from "../image/juan-port.jpg";
-import cv from "../image/CV-Juan-Manuel-Herrero.pdf" // Importa la imagen directamente
+import cv from "../image/CV-Juan-Manuel-Herrero.pdf"
+import Cursor from "../Common/Cursor"
+
 
 const PresentationComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,6 +78,7 @@ const PresentationComponent = () => {
         </div>
         <img className="img-juan" src={data.img} alt="Juan Port"></img> {/* Añade el atributo alt */}
       </div>
+      <Cursor/>
     </>
   );
 };

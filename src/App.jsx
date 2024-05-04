@@ -8,7 +8,7 @@ import ProjectList from "./Common/ProjectList";
 import ProjectDetail from "./Pages/ProjectDetail";
 import SkillsComponent from "./Common/SkillComponent";
 import Footer from "./Layout/Footer";
-import Cursor from "./Common/Cursor";
+/* import Cursor from "./Common/Cursor"; */
 
 const projects = [
   {
@@ -116,7 +116,7 @@ function App() {
       <Footer handleSectionChange={handleSectionChange}/>
       </div>
       </div>
-      <Cursor/>
+      {/* <Cursor/> */}
     </Router>
   );
 }
