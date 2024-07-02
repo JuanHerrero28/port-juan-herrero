@@ -145,7 +145,7 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
               <ButtonComponent text={<>Proyecto Anterior</>} />
             </Link>
           )}
-          {project.id !== 5 && (
+          {project.id !== 6 && (
             <Link to={`/project/${project.id + 1}`} className="next-button" onClick={handleNextProjectClick}>
               <ButtonComponent text={<>Siguiente Proyecto</>} />
             </Link>
