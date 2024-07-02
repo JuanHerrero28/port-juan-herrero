@@ -8,6 +8,7 @@ import todo1Image from "../image/to-do-1.jpg";
 import barong1Image from "../image/barong-1.jpg";
 import eventosJuanImage from "../image/den-4.jpg";
 import desingPort from "../image/ds-1.jpg";
+import fest from "../image/fest-1.jpg";
 
 const variants = {
   open: {
@@ -39,6 +40,8 @@ const getImage = (imageName) => {
       return eventosJuanImage;
     case "ds-1.jpg":
       return desingPort;
+    case "fest-1.jpg":
+      return fest;
     default:
       return null;
   }

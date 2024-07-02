@@ -20,6 +20,10 @@ import den3 from "../image/den-3.jpg";
 import ds1 from "../image/ds-1.jpg";
 import ds2 from "../image/ds-2.jpg";
 import ds3 from "../image/ds-3.jpg";
+import fest1 from "../image/fest-1.jpg";
+import fest4 from "../image/fest-4.jpg";
+import fest3 from "../image/fest-3.jpg";
+
 import ButtonComponent from "../Common/ButtonComponent";
 
 
@@ -39,6 +43,9 @@ const images = {
   "ds-1": ds1,
   "ds-2": ds2,
   "ds-3": ds3,
+  "fest-1": fest1,
+  "fest-4": fest4,
+  "fest-3": fest3,
 };
 
 const ProjectDetail = ({ projects, onSectionChange }) => {
