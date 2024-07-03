@@ -14,8 +14,8 @@
 }
 
 .img-juan {
-  width: 30%; /* Ajusta el ancho según sea necesario */
-  height: auto;
+  width: 450px;
+  height: 450px;
   border-radius: 15rem;
   border: 0.5px solid #29292952;
   filter: grayscale(100%); /* Convertir la imagen a escala de grises */
