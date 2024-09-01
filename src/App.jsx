@@ -63,7 +63,7 @@ const projects = [
     images: ["fest-1", "fest-3", "fest-4"],
     description: "FestivAll es una plataforma diseñada para la gestión integral de eventos y festivales, que utiliza una arquitectura moderna y eficiente. El frontend está desarrollado en React, empleando Fluent UI para una interfaz de usuario atractiva y Jotai para la gestión de estados. Además, utiliza Auth0 para la autenticación, garantizando la seguridad de los usuarios. La aplicación permite a los usuarios explorar eventos, realizar reservas y acceder a información de manera intuitiva y rápida. Para manejar las solicitudes y las operaciones del frontend, se ha implementado un backend robusto utilizando Java con Spring Boot, lo que facilita la creación y gestión de APIs RESTful",
     description2: "La base de datos de la aplicación está en MySQL, desplegada en Amazon RDS para asegurar la disponibilidad y seguridad de los datos. Esto permite un almacenamiento confiable y una recuperación eficiente de la información de reservas y eventos. El despliegue se realiza utilizando AWS y Railway, con Amazon EC2 manejando la infraestructura del servidor y Surge.sh hospedando el frontend. Herramientas como Postman y Thunder Client se utilizan para probar y documentar las APIs, garantizando interacciones fluidas entre el frontend y el backend. En conjunto, ProyectoFestivAll ofrece una solución completa y escalable para la gestión de festivales, desde la planificación de eventos hasta la interacción con los asistentes.",
-    url: "https://grand-compassion-production-9ef5.up.railway.app/",
+    url: "https://festivall-juan-manuel-s-projects-aa10712c.vercel.app/",
   },
 ];
 
