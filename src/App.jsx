@@ -81,7 +81,7 @@ const projects = [
     images: ["in-2", "in-3", "in-4"],
     description: "Esta plataforma de gestión de eventos permite a los usuarios confirmar su asistencia a una boda, acceder a información sobre regalos y visualizar una cuenta regresiva para el evento. Con un diseño responsivo, cuenta con secciones como detalles de regalo, integración con Instagram para fotos y botones para agregar al calendario.",
     description2: "Sistema de Confirmación de Asistencia: En este sistema, los usuarios pueden confirmar su asistencia a un evento especial, ver detalles sobre regalos y disfrutar de un contador regresivo hasta la fecha del evento. La plataforma también incluye una integración con redes sociales y la opción de añadir el evento al calendario personal.",
-    url: "https://renew-ynuj.vercel.app/",
+    url: "https://invitation-wedding-eight.vercel.app/",
   },
 ];
 
