@@ -9,6 +9,8 @@ import barong1Image from "../image/barong-1.jpg";
 import eventosJuanImage from "../image/den-4.jpg";
 import desingPort from "../image/ds-1.jpg";
 import fest from "../image/fest-1.jpg";
+import renew from "../image/re-1.jpg";
+import invi from "../image/in-1.jpg"
 
 const variants = {
   open: {
@@ -42,6 +44,10 @@ const getImage = (imageName) => {
       return desingPort;
     case "fest-1.jpg":
       return fest;
+    case "re-1.jpg":
+      return renew;
+    case "in-1.jpg":
+      return invi;
     default:
       return null;
   }
