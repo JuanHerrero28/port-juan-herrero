@@ -65,6 +65,24 @@ const projects = [
     description2: "La base de datos de la aplicación está en MySQL, desplegada en Amazon RDS para asegurar la disponibilidad y seguridad de los datos. Esto permite un almacenamiento confiable y una recuperación eficiente de la información de reservas y eventos. El despliegue se realiza utilizando AWS y Railway, con Amazon EC2 manejando la infraestructura del servidor y Surge.sh hospedando el frontend. Herramientas como Postman y Thunder Client se utilizan para probar y documentar las APIs, garantizando interacciones fluidas entre el frontend y el backend. En conjunto, ProyectoFestivAll ofrece una solución completa y escalable para la gestión de festivales, desde la planificación de eventos hasta la interacción con los asistentes.",
     url: "https://festivall-juan-manuel-s-projects-aa10712c.vercel.app/",
   },
+  {
+    id: 7,
+    name: "Renew",
+    image: "re-1.jpg",
+    images: ["re-2", "re-3", "re-4"],
+    description: "Este proyecto es una tienda en línea con carrito de compras, usando React, Redux y TypeScript. El estado global del carrito se maneja con useReducer y un cartReducer, permitiendo agregar, quitar o vaciar productos. Los datos de productos se gestionan con JSON Server, y la navegación entre páginas se maneja con react-router-dom. Además, react-query se usa para obtener productos desde un servidor simulado.",
+    description2: "Es una aplicación de comercio electrónico que gestiona el carrito de compras con Redux y TypeScript. Utiliza cartReducer para actualizar el estado del carrito, y JSON Server simula un backend para los productos. Las rutas se gestionan con react-router-dom, y las consultas a la API se realizan con react-query",
+    url: "https://renew-ynuj.vercel.app/",
+  },
+  {
+    id: 8,
+    name: "Invitation-Wedding",
+    image: "in-1.jpg",
+    images: ["in-2", "in-3", "in-4"],
+    description: "Esta plataforma de gestión de eventos permite a los usuarios confirmar su asistencia a una boda, acceder a información sobre regalos y visualizar una cuenta regresiva para el evento. Con un diseño responsivo, cuenta con secciones como detalles de regalo, integración con Instagram para fotos y botones para agregar al calendario.",
+    description2: "Sistema de Confirmación de Asistencia: En este sistema, los usuarios pueden confirmar su asistencia a un evento especial, ver detalles sobre regalos y disfrutar de un contador regresivo hasta la fecha del evento. La plataforma también incluye una integración con redes sociales y la opción de añadir el evento al calendario personal.",
+    url: "https://renew-ynuj.vercel.app/",
+  },
 ];
 
 function App() {
