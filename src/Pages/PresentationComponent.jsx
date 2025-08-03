@@ -2,8 +2,8 @@ import ButtonComponent from "../Common/ButtonComponent";
 import { motion } from "framer-motion";
 import { useState, useEffect   } from "react";
 import "./PresentationComponent.css";
-import juanPortImage from "../image/juan-port.jpg";
-import cv from "../image/CV-Juan-Manuel-Herrero.pdf"
+import juanPortImage from "../image/juanport.png";
+import cv from "../image/juan-manuel-herrero.pdf"
 import Cursor from "../Common/Cursor"
 
 

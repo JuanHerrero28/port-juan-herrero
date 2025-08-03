@@ -2,8 +2,9 @@ import { Link, useParams } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Loading from "../Common/Loading"; // Importa el componente Loading
-import './ProjectDetail.css'
-import Cursor from "../Common/Cursor"
+import "./ProjectDetail.css";
+import Cursor from "../Common/Cursor";
+import ImageSlider from "../Common/ImageSlider";
 
 import clinic2 from "../image/clinic-2.jpg";
 import clinic3 from "../image/clinic-3.jpg";
@@ -31,7 +32,6 @@ import in2 from "../image/in-3.jpg";
 import in3 from "../image/in-4.jpg";
 
 import ButtonComponent from "../Common/ButtonComponent";
-
 
 const images = {
   "clinic-2": clinic2,
@@ -76,11 +76,11 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-    
+
     if (nextProjectClicked) {
       setIsLoading(true);
       setNextProjectClicked(false); // Restablece el estado de nextProjectClicked
-    }// Simula un tiempo de carga de 3 segundos
+    } // Simula un tiempo de carga de 3 segundos
 
     return () => clearTimeout(timer);
   }, [projectId, nextProjectClicked]);
@@ -92,15 +92,19 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
 
   // Verificar si la propiedad images existe y es un array
   if (!project.images || !Array.isArray(project.images)) {
-    return <div className="project-detail">No hay imágenes disponibles para este proyecto.</div>;
+    return (
+      <div className="project-detail">
+        No hay imágenes disponibles para este proyecto.
+      </div>
+    );
   }
+
+  const imageSources = project.images.map((imgKey) => images[imgKey]);
 
   const handleNextProjectClick = () => {
     setIsLoading(true);
-    window.scrollTo(0, 0);  // Al hacer clic, establece isLoading en true para mostrar el componente Loading
+    window.scrollTo(0, 0); // Al hacer clic, establece isLoading en true para mostrar el componente Loading
   };
-
- 
 
   // Mostrar los detalles del proyecto o el componente Loading según el estado de carga
   return (
@@ -109,42 +113,28 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
         <Loading />
       ) : (
         <>
-          <Link to="/" onClick={() => onSectionChange(2)}  className="back-button"><ButtonComponent text="Volver al inicio"/></Link>
+          <Link
+            to="/"
+            onClick={() => onSectionChange(2)}
+            className="back-button"
+          >
+            <ButtonComponent text="Volver al inicio" />
+          </Link>
           {/* Botón para volver al inicio */}
           <h2 className="title-detail">{project.name}</h2>
           {/* Resto de tu código aquí */}
           <article className="container-detail">
-            <div>
-              <img
-                className="image-detail"
-                src={images[project.images[0]]}
-                alt={project.name}
-              />
+            <div className="text-columns">
+              <div className="paragraph-detail">{project.description}</div>
+              <div className="paragraph-detail">{project.description2}</div>
             </div>
-            <div className="cont-paragra">
-              <p className="paragraph-detail">{project.description}</p>
+
+            <div className="slider-wrapper">
+              <ImageSlider images={imageSources} />
             </div>
-            <div className="cont-paragra">
-              <p className="paragraph-detail">{project.description2}</p>
-            </div>
-            <img
-              className="image-detail"
-              src={images[project.images[1]]}
-              alt={project.name}
-            />
-            <div>
-              <img
-                className="image-detail"
-                src={images[project.images[2]]}
-                alt={project.name}
-              />
-            </div>
+
             <div className="icons-detail">
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <span>
                   <FaGithub /> Ver Proyecto
                 </span>
@@ -152,18 +142,26 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
             </div>
           </article>
           <div className="navigation-buttons">
-          {project.id !== 1 && (
-            <Link to={`/project/${project.id - 1}`} className="next-button" onClick={handleNextProjectClick}>
-              <ButtonComponent text={<>Proyecto Anterior</>} />
-            </Link>
-          )}
-          {project.id !== 8 && (
-            <Link to={`/project/${project.id + 1}`} className="next-button" onClick={handleNextProjectClick}>
-              <ButtonComponent text={<>Siguiente Proyecto</>} />
-            </Link>
-          )}
-          {/* Botón para ir al siguiente proyecto */}
-          <Cursor/>
+            {project.id !== 1 && (
+              <Link
+                to={`/project/${project.id - 1}`}
+                className="next-button"
+                onClick={handleNextProjectClick}
+              >
+                <ButtonComponent text={<>Proyecto Anterior</>} />
+              </Link>
+            )}
+            {project.id !== 8 && (
+              <Link
+                to={`/project/${project.id + 1}`}
+                className="next-button"
+                onClick={handleNextProjectClick}
+              >
+                <ButtonComponent text={<>Siguiente Proyecto</>} />
+              </Link>
+            )}
+            {/* Botón para ir al siguiente proyecto */}
+            <Cursor />
           </div>
         </>
       )}
@@ -172,6 +170,3 @@ const ProjectDetail = ({ projects, onSectionChange }) => {
 };
 
 export default ProjectDetail;
-
-
-
