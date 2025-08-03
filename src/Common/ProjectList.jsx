@@ -11,7 +11,8 @@ import desingPort from "../image/ds-1.jpg";
 import fest from "../image/fest-1.jpg";
 import renew from "../image/re-1.jpg";
 import invi from "../image/in-1.jpg";
-import money from "../image/dig-1.png";
+import money from "../image/dig-1.jpg";
+import show from "../image/sh-1.jpg"
 
 const variants = {
   open: {
@@ -49,8 +50,10 @@ const getImage = (imageName) => {
       return renew;
     case "in-1.jpg":
       return invi;
-       case "dig-1.png":
+    case "dig-1.jpg":
       return money;
+    case "sh-1.jpg":
+      return show;
     default:
       return null;
   }

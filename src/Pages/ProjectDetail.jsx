@@ -30,6 +30,14 @@ import re3 from "../image/re-4.jpg";
 import in1 from "../image/in-2.jpg";
 import in2 from "../image/in-3.jpg";
 import in3 from "../image/in-4.jpg";
+import dig4 from "../image/dig-4.png"
+import dig5 from "../image/dig-5.png"
+import dig6 from "../image/dig-6.png"
+import dig7 from "../image/dig-7.png"
+import dig8 from "../image/dig-8.png"
+import sh1 from "../image/sh-1.jpg"
+import sh2 from "../image/sh-2.jpg"
+import sh3 from "../image/sh-3.jpg"
 
 import ButtonComponent from "../Common/ButtonComponent";
 
@@ -58,6 +66,14 @@ const images = {
   "in-2": in1,
   "in-3": in2,
   "in-4": in3,
+  "dig-4": dig4,
+  "dig-5": dig5,
+  "dig-6": dig6,
+  "dig-7": dig7,
+  "dig-8": dig8,
+  "sh-1": sh1,
+  "sh-2": sh2,
+  "sh-3": sh3,
 };
 
 const ProjectDetail = ({ projects, onSectionChange }) => {
